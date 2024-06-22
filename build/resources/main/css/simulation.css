@@ -1,0 +1,8 @@
+#myHBox {
+    -fx-background-color: #beb4c9;
+}
+.grid-cell {
+    -fx-border-color: black; /* Border color */
+    -fx-border-width: 4px; /* Border width (adjust as needed) */
+    -fx-padding: 10px; /* Add padding for spacing */
+}

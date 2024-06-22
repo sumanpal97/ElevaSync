@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+
+<HBox id="myHBox" xmlns:fx="http://javafx.com/fxml" fx:controller="org.elevaSync.gui.simulation.Simulation" alignment="center" prefWidth="1200" prefHeight="850" spacing="20">
+    <GridPane fx:id="buttonGrid" alignment="center" styleClass="grid" gridLinesVisible="true"/>
+    <VBox alignment="CENTER_LEFT" spacing="10">
+        <GridPane fx:id="elevatorGrid" alignment="center" styleClass="grid" gridLinesVisible="true">
+        </GridPane>
+        <HBox alignment="center" spacing="10">
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <!-- Custom icon for "Elevator has stopped" -->
+                <ImageView>
+                    <Image url="@/icons/stop.png"/>
+                </ImageView>
+                <Label text="Elevator has stopped"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <!-- Custom icon for "Elevator is moving" -->
+                <ImageView>
+                    <Image url="@/icons/moving.png"/>
+                </ImageView>
+                <Label text="Elevator is moving"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <!-- Custom icon for "Elevator is idle" -->
+                <ImageView>
+                    <Image url="@/icons/idle.png"/>
+                </ImageView>
+                <Label text="Elevator is idle"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <!-- Custom icon for "Elevator is out of service" -->
+                <ImageView>
+                    <Image url="@/icons/oosl.png"/>
+                </ImageView>
+                <Label text="Elevator is out of service"/>
+            </HBox>
+        </HBox>
+    </VBox>
+    <GridPane fx:id="innerGrid" alignment="center" styleClass="grid" gridLinesVisible="true"/>
+</HBox>

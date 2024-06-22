@@ -1,0 +1,11 @@
+#myVBox {
+    -fx-background-color: #beb4c9;
+}
+
+.my-label {
+    -fx-font-weight: bold;
+}
+
+.my-button {
+    -fx-font-weight: bold;
+}
