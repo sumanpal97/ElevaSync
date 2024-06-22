@@ -8,10 +8,10 @@
 
 <HBox id="myHBox" xmlns:fx="http://javafx.com/fxml" fx:controller="org.elevaSync.gui.simulation.Simulation" alignment="center" prefWidth="1200" prefHeight="850" spacing="20">
     <GridPane fx:id="buttonGrid" alignment="center" styleClass="grid" gridLinesVisible="true"/>
+    <GridPane fx:id="elevatorGrid" alignment="center" styleClass="grid" gridLinesVisible="true">
+    </GridPane>
     <VBox alignment="CENTER_LEFT" spacing="10">
-        <GridPane fx:id="elevatorGrid" alignment="center" styleClass="grid" gridLinesVisible="true">
-        </GridPane>
-        <HBox alignment="center" spacing="10">
+        <VBox alignment="center" spacing="10">
             <HBox alignment="CENTER_LEFT" spacing="10">
                 <!-- Custom icon for "Elevator has stopped" -->
                 <ImageView>
@@ -40,7 +40,8 @@
                 </ImageView>
                 <Label text="Elevator is out of service"/>
             </HBox>
-        </HBox>
+        </VBox>
+        <GridPane fx:id="innerGrid" alignment="center" styleClass="grid" gridLinesVisible="true"/>
     </VBox>
-    <GridPane fx:id="innerGrid" alignment="center" styleClass="grid" gridLinesVisible="true"/>
+
 </HBox>
